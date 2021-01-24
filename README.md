@@ -12,7 +12,7 @@ pip install -r requirments.txt
 
 ### 数据预处理
 
-在`trajectory`路径下新建文件夹，以`test`文件夹为例。将待处理的仅包含蛋白质的模拟轨迹的拓扑文件（pdb格式）和轨迹文件放入其中。运行以下命令
+在`trajectory`路径下新建文件夹。将待处理的仅包含蛋白质的模拟轨迹的拓扑文件（pdb格式）和轨迹文件放入其中。运行以下命令
 
 ```bash
 python preprocessing.py -trjfolder name_of_folder -trjtype xtc
@@ -108,12 +108,12 @@ python cluster.py -ds example -mt FCAE_2021-01-24-16-15-54 -sr 0.1 -cc 6
 
 ```bash
 [INFO] The number of frames of each cluster:
-cluster 1 : 234 frames
-cluster 2 : 333 frames
-cluster 3 : 322 frames
-cluster 4 : 210 frames
-cluster 5 : 348 frames
-cluster 6 : 553 frames
+cluster 1: 234 frames
+cluster 2: 333 frames
+cluster 3: 322 frames
+cluster 4: 210 frames
+cluster 5: 348 frames
+cluster 6: 553 frames
 ```
 
 在`clustering_result`路径下得到聚类结果。其中包括不同目标类数时各类的构象及中心构象、隐空间可视化图。目标类数为6时隐空间可视化图如下
