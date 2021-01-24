@@ -4,7 +4,7 @@
 
 ### 安装
 
-模型基于python3，主要依赖包有`mdtraj`, `pytorch`, `sklearn`, `tqdm`等。
+模型基于python3.6，主要依赖包有`mdtraj`, `pytorch`, `sklearn`, `tqdm`等。
 ```bash
 pip install -r requirments.txt
 ```
