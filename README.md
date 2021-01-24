@@ -63,16 +63,20 @@ python cluster.py -ds example -cc 8
 ```
 
 各参数含义：
+
 `-ds`--数据集名称， 默认值example，
+
 `-mt`--自编码器模型训练的时间，格式为FCAE_yy-mm-dd-hh-mm-ss，
+
 `-cc`--目标类数， 默认值10，
+
 `-sr`--采样率，默认值0.01。
 
 聚类完成后，在`clustering_result`文件夹中得到各数据集对应的文件夹。各文件夹下包含每个数据集各次聚类结果，其中包含各类的构象、中心构象和t-SNE方法生成的低维空间数据分布图。
 
 ### Example
 
-fs-peptide是结构简单的单链蛋白，以两段共20000帧的fs-peptide模拟轨迹（获取自mdtraj）来说明本模型的运行方法。
+fs-peptide是结构简单的单链蛋白，以两段共20000帧的fs-peptide模拟轨迹（获取自[mdtraj](https://mdtraj.org/1.9.4/index.html)）来说明本模型的运行方法。
 
 1. 数据预处理
 
