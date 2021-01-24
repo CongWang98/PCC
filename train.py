@@ -281,8 +281,8 @@ if __name__ == "__main__":
     xtotal_stand = stand_scaler.fit_transform(xtotal)
     xmean = to_device(torch.tensor(stand_scaler.mean_, dtype=torch.float32), device)
     xscale = to_device(torch.tensor(stand_scaler.scale_, dtype=torch.float32), device)
-    print('xmean:', xmean)
-    print('xscale:', xscale)
+    #print('xmean:', xmean)
+    #print('xscale:', xscale)
     x_stand = SampleData(xtotal_stand, SAMPLE_RATE)
     if len(atomset) != 1:
         raise ValueError('wrong atom number.')
@@ -328,9 +328,9 @@ if __name__ == "__main__":
           .format(total_loss, adtotal_loss))
 
     params = list(net.named_parameters())
-    print(params.__len__())
-    print(params[0])
-    print(params[-1])
+    #print(params.__len__())
+    #print(params[0])
+    #print(params[-1])
 
     # Generate latent file
     if OUTPUT:
