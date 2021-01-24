@@ -97,7 +97,9 @@ python train.py -ds example -ep 100 -sr 1 -ld 10 -ids 1000 1000 1000
 ```
 
 模型自动将数据集按4:1划为训练集和测试集。训练结束后得到`example.log`文件，记录训练时间以及模型的各项参数。在`training_result`下得到`example`文件夹，其中有各次训练的结果，每次训练结果的文件夹用训练时间命名。训练结果包含四个文件夹：checkpoint、image、latent和tensorboard。其中`latent`为训练完成后的隐变量，用作下一步聚类；`image`文件夹记录训练完成后输入输出的对比，以下是几个示例。
+
 ![image](image1_for_readme.png)
+
 ![image](image2_for_readme.png)
 
 3. 隐变量聚类
